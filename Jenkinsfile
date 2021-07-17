@@ -24,9 +24,9 @@ node{
    sh 'docker push 9176892124/myweb:0.0.2'
    }
    stage('Nexus Image Push'){
-   sh "docker login -u admin -p admin123 3.8.153.142:8083"
-   sh "docker tag 9176892124/myweb:0.0.2 3.8.153.142:8083/fatin:1.0.0"
-   sh 'docker push 3.8.153.142:8083/fatin:1.0.0'
+   sh "docker login -u admin -p admin123 35.179.88.112:8083"
+   sh "docker tag 9176892124/myweb:0.0.2 35.179.88.112:8083/fatin:1.0.0"
+   sh 'docker push 35.179.88.112:8083/fatin:1.0.0'
    }
    stage('Remove Previous Container'){
 	try{
